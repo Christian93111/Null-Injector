@@ -12,7 +12,7 @@ Null Injector is a simple DLL injector for Windows. Designed with simplicity and
 
 ## Preview
 
-> Add a screenshot here.
+![Null Injector Screenshot](https://raw.githubusercontent.com/Christian93111/Null-Injector/refs/heads/main/screenshot/1.png)
 
 ## Releases
 
