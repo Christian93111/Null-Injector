@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 project(NullInjector VERSION 0.1.0)
 
+# Ensure MSVC statically links the runtime library (/MT or /MTd) to avoid missing DLLs
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 set(CMAKE_CXX_STANDARD 17)
 
 set(wxBUILD_SHARED OFF CACHE BOOL "OFF for static library!" FORCE) # force wxWidgets to use static library
